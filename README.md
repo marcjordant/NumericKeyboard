@@ -1,6 +1,5 @@
 # NumericKeyboard
 
-[![CI Status](http://img.shields.io/travis/Marc Jordant/NumericKeyboard.svg?style=flat)](https://travis-ci.org/Marc Jordant/NumericKeyboard)
 [![Version](https://img.shields.io/cocoapods/v/NumericKeyboard.svg?style=flat)](http://cocoapods.org/pods/NumericKeyboard)
 [![License](https://img.shields.io/cocoapods/l/NumericKeyboard.svg?style=flat)](http://cocoapods.org/pods/NumericKeyboard)
 [![Platform](https://img.shields.io/cocoapods/p/NumericKeyboard.svg?style=flat)](http://cocoapods.org/pods/NumericKeyboard)
@@ -10,6 +9,10 @@
 
 This keyboard view is intended to replace the default keyboard on iPad for entering numerical values.
 As the default keyboard on iPad still shows all keys even for numerical entry modes, this keyboard only focuses on numeric keys.
+
+Here is an screenshot of the keyboard:
+
+![screenshot](https://github.com/marcjordant/NumericKeyboard/blob/master/example.png)
 
 ## Example
 
