@@ -17,7 +17,7 @@ As the default keyboard on iPad still shows all keys even for numerical entry mo
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Marc Jordant' => 'marcjordant@gmail.com' }
   s.source           = { :git => 'https://github.com/marcjordant/NumericKeyboard.git', :tag => s.version.to_s }
-  s.screenshots      = 'https://github.com/marcjordant/NumericKeyboard/blob/master/example.png'
+  s.screenshots      = 'https://github.com/marcjordant/NumericKeyboard/blob/master/example.png?raw=true'
   s.social_media_url = 'https://twitter.com/marcjordant'
 
   s.ios.deployment_target = '8.0'
