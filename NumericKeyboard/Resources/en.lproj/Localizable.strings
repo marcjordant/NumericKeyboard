@@ -1,0 +1,14 @@
+/* 
+  NKLocalizable.strings
+  NumericKeyboard
+
+  Created by Marc Jordant on 24/07/16.
+  Copyright © 2016 singleTapps. All rights reserved.
+*/
+
+
+"NumericKeyboard.return-key.Default"="Return";
+"NumericKeyboard.return-key.Search"="Search";
+"NumericKeyboard.return-key.Next"="Next";
+"NumericKeyboard.return-key.Save"="Save";
+

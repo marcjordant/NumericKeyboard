@@ -1,0 +1,6 @@
+framework module Pods_NumericKeyboard_Example {
+  umbrella header "Pods-NumericKeyboard_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
