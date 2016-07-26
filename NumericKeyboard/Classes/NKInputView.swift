@@ -74,6 +74,32 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
     case Save
     
     /**
+     Shows the text "Go" in the return key
+     */
+    case Go
+    
+    /**
+     Shows the text "Join" in the return key
+     */
+    case Join
+    
+    /**
+     Shows the text "Route" in the return key
+     */
+    case Route
+    
+    /**
+     Shows the text "Send" in the return key
+     */
+    case Send
+    
+    /**
+     Shows the text "Done" in the return key
+     */
+    case Done
+    
+    
+    /**
      Use this value for specifying a custom text
      
      - parameters:
@@ -96,10 +122,10 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
     
     func backgroundColor() -> UIColor? {
       switch self {
-      case .Save, .Search:
-        return UIColor(red: 9/255.0, green: 126/255.0, blue: 254/255.0, alpha: 1)
-      default:
+      case .Default, .Next:
         return nil
+      default:
+        return UIColor(red: 9/255.0, green: 126/255.0, blue: 254/255.0, alpha: 1)
       }
     }
     
