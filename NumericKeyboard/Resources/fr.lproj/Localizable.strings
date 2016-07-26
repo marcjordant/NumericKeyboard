@@ -7,8 +7,12 @@
 */
 
 
-"NumericKeyboard.return-key.Default"="Retour";
+"NumericKeyboard.return-key.Default"="retour";
+"NumericKeyboard.return-key.Go"="Accéder";
 "NumericKeyboard.return-key.Search"="Rechercher";
+"NumericKeyboard.return-key.Join"="Rejoindre";
 "NumericKeyboard.return-key.Next"="Suivant";
-"NumericKeyboard.return-key.Save"="Sauver";
-
+"NumericKeyboard.return-key.Route"="Itinéraire";
+"NumericKeyboard.return-key.Send"="Envoyer";
+"NumericKeyboard.return-key.Done"="Terminé";
+"NumericKeyboard.return-key.Save"="Save";

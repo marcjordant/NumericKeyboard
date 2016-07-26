@@ -10,17 +10,53 @@
 This keyboard view is intended to replace the default keyboard on iPad for entering numerical values.
 As the default keyboard on iPad still shows all keys even for numerical entry modes, this keyboard only focuses on numeric keys.
 
-Here is an screenshot of the keyboard:
+#### screenshot
 
-![screenshot](https://github.com/marcjordant/NumericKeyboard/blob/master/example.png)
+![screenshot](https://github.com/marcjordant/NumericKeyboard/blob/master/example.png?raw=true)
+
+
+## Localisation
+
+The return key texts are available in 
+
+  * English
+  * French
+  * Dutch
+  * German
+  * Spanish
+  * Italian
+
+
+#### New language
+If you want a new language to be supported, just [contact me](mailto:marcjordant@gmail.com?subject=NumericKeyboard) !
+
+#### Custom text
+You can also use the 
+
+```Swift
+NKKeyboardReturnKeyType.Custom(text: String) 
+```
+
+value as the return key type and use any text you want.
+
 
 ## Example
 
+To set the Numeric Keyboard as an input view of a text field, just use NKInputView.with(_:, _:) :
+
+_Declaration of the UITextField_
+
 ```Swift
 @IBOutlet var textField: UITextField!
-
-NKInputView.with(textField, type: NKInputView.NKKeyboardType.NumberPad)
 ```
+
+_Somewhere in viewDidLoad (for example), add this line_
+
+```Swift
+NKInputView.with(textField, type: .NumberPad, returnKeyType: .Next)
+```
+
+#### Example project
 
 There is an example project where you can see how it works.
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
@@ -45,3 +81,14 @@ Marc Jordant, marcjordant@gmail.com
 ## License
 
 NumericKeyboard is available under the MIT license. See the LICENSE file for more info.
+
+
+## Changelog
+
+#### 1.1.0
+
+ * Added localisation support for Dutch, German, Spanish, Italian
+ * Added new return key types
+
+#### 1.0.0
+ * First version
