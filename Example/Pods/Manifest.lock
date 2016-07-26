@@ -1,0 +1,16 @@
+PODS:
+  - NumericKeyboard (1.1.0)
+
+DEPENDENCIES:
+  - NumericKeyboard (from `../`)
+
+EXTERNAL SOURCES:
+  NumericKeyboard:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  NumericKeyboard: 639f02488ffbab29868df3ab5b5d80d908938de5
+
+PODFILE CHECKSUM: 9dfa7a0a55335e2a278487c978a549864f44dbf7
+
+COCOAPODS: 1.0.1

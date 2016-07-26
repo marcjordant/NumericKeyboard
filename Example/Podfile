@@ -3,9 +3,4 @@ use_frameworks!
 target 'NumericKeyboard_Example' do
   pod 'NumericKeyboard', :path => '../'
 
-  target 'NumericKeyboard_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
