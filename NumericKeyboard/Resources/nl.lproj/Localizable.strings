@@ -7,12 +7,12 @@
 */
 
 
-"NumericKeyboard.return-key.Default"="return";
-"NumericKeyboard.return-key.Go"="Ga";
-"NumericKeyboard.return-key.Search"="Zoek";
-"NumericKeyboard.return-key.Join"="Verbind";
-"NumericKeyboard.return-key.Next"="Volgende";
-"NumericKeyboard.return-key.Route"="Route";
-"NumericKeyboard.return-key.Send"="Stuur";
-"NumericKeyboard.return-key.Done"="Gereed";
-"NumericKeyboard.return-key.Save"="Besparen";
+"NumericKeyboard.return-key.default"="return";
+"NumericKeyboard.return-key.go"="Ga";
+"NumericKeyboard.return-key.search"="Zoek";
+"NumericKeyboard.return-key.join"="Verbind";
+"NumericKeyboard.return-key.next"="Volgende";
+"NumericKeyboard.return-key.route"="Route";
+"NumericKeyboard.return-key.send"="Stuur";
+"NumericKeyboard.return-key.done"="Gereed";
+"NumericKeyboard.return-key.save"="Besparen";

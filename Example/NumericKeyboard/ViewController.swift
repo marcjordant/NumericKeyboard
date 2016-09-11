@@ -20,17 +20,17 @@ class ViewController: UIViewController, UITextFieldDelegate
   {
     super.viewDidLoad()
     
-    NKInputView.with(textFieldNumberPad, type: NKInputView.NKKeyboardType.NumberPad, returnKeyType: NKInputView.NKKeyboardReturnKeyType.Next)
+    let _ = NKInputView.with(textFieldNumberPad, type: NKInputView.NKKeyboardType.numberPad, returnKeyType: NKInputView.NKKeyboardReturnKeyType.next)
 
-    NKInputView.with(textFieldDecimalPad, type: NKInputView.NKKeyboardType.DecimalPad, returnKeyType: NKInputView.NKKeyboardReturnKeyType.Next)
+    let _ = NKInputView.with(textFieldDecimalPad, type: NKInputView.NKKeyboardType.decimalPad, returnKeyType: NKInputView.NKKeyboardReturnKeyType.next)
     
-    NKInputView.with(textFieldPhonePad, type: NKInputView.NKKeyboardType.PhonePad, returnKeyType: .Custom(text: "Hello"))
+    let _ = NKInputView.with(textFieldPhonePad, type: NKInputView.NKKeyboardType.phonePad, returnKeyType: .custom(text: "Hello"))
   }
   
   
   // MARK: - TextField delegate -
 
-  func textFieldShouldReturn(textField: UITextField) -> Bool
+  func textFieldShouldReturn(_ textField: UITextField) -> Bool
   {
     switch textField {
       

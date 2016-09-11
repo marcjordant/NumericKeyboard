@@ -13,18 +13,18 @@ class NKKeyboardButton: UIButton
   @IBInspectable var backgroundColorForStateNormal: UIColor?
   @IBInspectable var backgroundColorForStateHighlighted: UIColor?
   
-  var returnType = NKInputView.NKKeyboardReturnKeyType.Default {
+  var returnType = NKInputView.NKKeyboardReturnKeyType.default {
     didSet {
-      self.setTitle(returnType.text(), forState: UIControlState.Normal)
-      self.setTitleColor(returnType.textColor() ?? UIColor.blackColor(), forState: UIControlState.Normal)
+      self.setTitle(returnType.text(), for: UIControlState())
+      self.setTitleColor(returnType.textColor() ?? UIColor.black, for: UIControlState.normal)
       self.backgroundColor = returnType.backgroundColor() ?? backgroundColorForStateNormal
     }
   }
   
-  override var highlighted: Bool
+  override var isHighlighted: Bool
     {
     get {
-      return super.highlighted
+      return super.isHighlighted
     }
     set {
       if newValue {
@@ -33,7 +33,7 @@ class NKKeyboardButton: UIButton
       else {
         self.backgroundColor = returnType.backgroundColor() ?? backgroundColorForStateNormal
       }
-      super.highlighted = newValue
+      super.isHighlighted = newValue
     }
   }
   
@@ -44,13 +44,13 @@ class NKKeyboardButton: UIButton
   {
     super.init(coder: aDecoder)
     
-    layer.shadowColor = UIColor.lightGrayColor().CGColor
+    layer.shadowColor = UIColor.lightGray.cgColor
     layer.shadowOffset = CGSize(width: 0, height: 1)
     layer.shadowOpacity = 0.8
     layer.shadowRadius = 1
     layer.cornerRadius = 5
     
-    dispatch_async(dispatch_get_main_queue()) { () -> Void in
+    DispatchQueue.main.async { () -> Void in
       self.backgroundColor = self.returnType.backgroundColor() ?? self.backgroundColorForStateNormal
     }
   }

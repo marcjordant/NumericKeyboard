@@ -16,7 +16,7 @@ import UIKit
  
  This numeric keyboard input view is intended to be a replacement of the default numeric keyboard on iPad. It shows only numerical keys instead of all symbols (including letters)
  */
-public class NKInputView: UIView, UIInputViewAudioFeedback
+open class NKInputView: UIView, UIInputViewAudioFeedback
 {
   // MARK: - Enum -
 
@@ -27,17 +27,17 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
     /**
      A number pad (0-9). Suitable for PIN entry.
      */
-    case NumberPad
+    case numberPad
     
     /**
      A number pad with a decimal point.
      */
-    case DecimalPad
+    case decimalPad
     
     /**
      A phone pad (0-9, +).
      */
-    case PhonePad
+    case phonePad
   }
 
   /**
@@ -56,47 +56,47 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
     /**
      Shows the text "Return" in the return key
      */
-    case Default
+    case `default`
     
     /**
      Shows the text "Search" in the return key
      */
-    case Search
+    case search
     
     /**
      Shows the text "Next" in the return key
      */
-    case Next
+    case next
     
     /**
      Shows the text "Save" in the return key
      */
-    case Save
+    case save
     
     /**
      Shows the text "Go" in the return key
      */
-    case Go
+    case go
     
     /**
      Shows the text "Join" in the return key
      */
-    case Join
+    case join
     
     /**
      Shows the text "Route" in the return key
      */
-    case Route
+    case route
     
     /**
      Shows the text "Send" in the return key
      */
-    case Send
+    case send
     
     /**
      Shows the text "Done" in the return key
      */
-    case Done
+    case done
     
     
     /**
@@ -105,24 +105,24 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
      - parameters:
         - text: the custom text to use for the return key
      */
-    case Custom(text: String)
+    case custom(text: String)
     
     
     func text() -> String {
       switch self {
-      case .Custom(let text):
+      case .custom(let text):
         return text
       default:
-        let podBundle = NSBundle(forClass: NKInputView.self)
-        let bundleURL = podBundle.URLForResource("NumericKeyboard", withExtension: "bundle")
-        let bundle = NSBundle(URL: bundleURL!)!
+        let podBundle = Bundle(for: NKInputView.self)
+        let bundleURL = podBundle.url(forResource: "NumericKeyboard", withExtension: "bundle")
+        let bundle = Bundle(url: bundleURL!)!
         return NSLocalizedString("NumericKeyboard.return-key.\(self)", bundle: bundle, comment: "")
       }
     }
     
     func backgroundColor() -> UIColor? {
       switch self {
-      case .Default, .Next:
+      case .default, .next:
         return nil
       default:
         return UIColor(red: 9/255.0, green: 126/255.0, blue: 254/255.0, alpha: 1)
@@ -131,8 +131,8 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
     
     func textColor() -> UIColor? {
       switch self {
-      case .Save, .Search:
-        return UIColor.whiteColor()
+      case .save, .search:
+        return UIColor.white
       default:
         return nil
       }
@@ -142,21 +142,21 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
   
   // MARK: - vars -
 
-  private weak var textView: UITextInput?
+  fileprivate weak var textView: UITextInput?
   
   
   // MARK: - Private vars -
   
-  private let TAG_B_DISMISS = 12
-  private let TAG_B_BACKWARD = 13
-  private let TAG_B_RETURN = 14
+  fileprivate let TAG_B_DISMISS = 12
+  fileprivate let TAG_B_BACKWARD = 13
+  fileprivate let TAG_B_RETURN = 14
 
   
   // MARK: - Outlets -
 
-  @IBOutlet private var bNext: NKKeyboardButton!
-  @IBOutlet private var bPlus: UIButton!
-  @IBOutlet private var bDot: UIButton!
+  @IBOutlet fileprivate var bNext: NKKeyboardButton!
+  @IBOutlet fileprivate var bPlus: UIButton!
+  @IBOutlet fileprivate var bDot: UIButton!
   
   
   // MARK: - Static methods -
@@ -175,22 +175,22 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
    - important:
    Only affect the input view on iPad. Do nothing on iPhone or iPod
    */
-  public static func with(textView: UITextInput,
-                          type: NKKeyboardType = .DecimalPad,
-                          returnKeyType: NKKeyboardReturnKeyType = .Default) -> NKInputView?
+  open static func with(_ textView: UITextInput,
+                          type: NKKeyboardType = .decimalPad,
+                          returnKeyType: NKKeyboardReturnKeyType = .default) -> NKInputView?
   {
-    guard UIDevice.currentDevice().userInterfaceIdiom == UIUserInterfaceIdiom.Pad else {
+    guard UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.pad else {
       // This is not an iPad, do nothing
       return nil
     }
     
     // Load the view from xib
-    let podBundle = NSBundle(forClass: NKInputView.self)
-    let bundleURL = podBundle.URLForResource("NumericKeyboard", withExtension: "bundle")
-    let bundle = NSBundle(URL: bundleURL!)!
+    let podBundle = Bundle(for: NKInputView.self)
+    let bundleURL = podBundle.url(forResource: "NumericKeyboard", withExtension: "bundle")
+    let bundle = Bundle(url: bundleURL!)!
     let nibName = "NumericKeyboard"
     let nib = UINib(nibName: nibName, bundle: bundle)
-    let instance = nib.instantiateWithOwner(self, options: nil).first as! NKInputView
+    let instance = nib.instantiate(withOwner: self, options: nil).first as! NKInputView
     
     instance.setup(textView, type: type, returnKeyType: returnKeyType)
     
@@ -201,7 +201,7 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
   // MARK: - Private methods -
 
   // Initialize the view
-  private func setup(textView: UITextInput, type: NKKeyboardType, returnKeyType: NKKeyboardReturnKeyType = .Default)
+  fileprivate func setup(_ textView: UITextInput, type: NKKeyboardType, returnKeyType: NKKeyboardReturnKeyType = .default)
   {
     self.textView = textView
     
@@ -219,21 +219,21 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
     bNext.returnType = returnKeyType
     
     switch type {
-    case .DecimalPad:
-      bPlus.hidden = true
-    case .NumberPad:
-      bDot.hidden = true
-      bPlus.hidden = true
-    case .PhonePad:
-      bDot.hidden = true
+    case .decimalPad:
+      bPlus.isHidden = true
+    case .numberPad:
+      bDot.isHidden = true
+      bPlus.isHidden = true
+    case .phonePad:
+      bDot.isHidden = true
     }
     
-    bDot.setTitle(NSLocale.currentLocale().objectForKey(NSLocaleDecimalSeparator) as? String, forState: UIControlState.Normal)
+    bDot.setTitle((Locale.current as NSLocale).object(forKey: NSLocale.Key.decimalSeparator) as? String, for: UIControlState.normal)
   }
   
   // Remove the Undo/Redo toolbar
   @available(iOS 9.0, *)
-  private func removeToolbar()
+  fileprivate func removeToolbar()
   {
     var item : UITextInputAssistantItem?
     if let txtView = self.textView as? UITextField {
@@ -246,7 +246,7 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
     item?.trailingBarButtonGroups = []
   }
   
-  private func isTextField() -> Bool
+  fileprivate func isTextField() -> Bool
   {
     if let _ = self.textView as? UITextField {
       return true
@@ -254,7 +254,7 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
     return false
   }
   
-  private func isTextView() -> Bool
+  fileprivate func isTextView() -> Bool
   {
     if let _ = self.textView as? UITextView {
       return true
@@ -265,7 +265,7 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
   
   // MARK: - Size management -
 
-  override public func intrinsicContentSize() -> CGSize
+  override open var intrinsicContentSize : CGSize
   {
     return CGSize(width: 100, height: 313)
   }
@@ -273,39 +273,39 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
   
   // MARK: - UIInputViewAudioFeedback -
   
-  public var enableInputClicksWhenVisible: Bool {
+  open var enableInputClicksWhenVisible: Bool {
     return true
   }
   
 
   // MARK: - Events -
 
-  @IBAction private func buttonPressed(sender: UIButton)
+  @IBAction fileprivate func buttonPressed(_ sender: UIButton)
   {
-    UIDevice.currentDevice().playInputClick()
+    UIDevice.current.playInputClick()
     
     switch sender.tag {
     case let (x) where x < 12:
-      let decimalChar = NSLocale.currentLocale().objectForKey(NSLocaleDecimalSeparator) as? String ?? "."
+      let decimalChar = (Locale.current as NSLocale).object(forKey: NSLocale.Key.decimalSeparator) as? String ?? "."
       let buttonsValues = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", decimalChar, "+"]
       let char = buttonsValues[sender.tag]
       textView?.insertText(char)
       
       if isTextField() {
-        NSNotificationCenter.defaultCenter().postNotificationName(UITextFieldTextDidChangeNotification, object: self.textView)
+        NotificationCenter.default.post(name: NSNotification.Name.UITextFieldTextDidChange, object: self.textView)
       }
       else if isTextView() {
-        NSNotificationCenter.defaultCenter().postNotificationName(UITextViewTextDidChangeNotification, object: self.textView)
+        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self.textView)
       }
       
     case TAG_B_BACKWARD:
       textView?.deleteBackward()
 
       if isTextField() {
-        NSNotificationCenter.defaultCenter().postNotificationName(UITextFieldTextDidChangeNotification, object: self.textView)
+        NotificationCenter.default.post(name: NSNotification.Name.UITextFieldTextDidChange, object: self.textView)
       }
       else if isTextView() {
-        NSNotificationCenter.defaultCenter().postNotificationName(UITextViewTextDidChangeNotification, object: self.textView)
+        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self.textView)
       }
       
     case TAG_B_RETURN:
@@ -315,7 +315,7 @@ public class NKInputView: UIView, UIInputViewAudioFeedback
       }
       else if isTextView() {
         textView?.insertText("\n")
-        NSNotificationCenter.defaultCenter().postNotificationName(UITextViewTextDidChangeNotification, object: self.textView)
+        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self.textView)
       }
 
     case TAG_B_DISMISS:

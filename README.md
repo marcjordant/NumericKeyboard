@@ -81,14 +81,3 @@ Marc Jordant, marcjordant@gmail.com
 ## License
 
 NumericKeyboard is available under the MIT license. See the LICENSE file for more info.
-
-
-## Changelog
-
-#### 1.1.0
-
- * Added localisation support for Dutch, German, Spanish, Italian
- * Added new return key types
-
-#### 1.0.0
- * First version

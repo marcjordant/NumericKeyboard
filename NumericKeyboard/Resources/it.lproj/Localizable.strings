@@ -7,12 +7,12 @@
 */
 
 
-"NumericKeyboard.return-key.Default"="invio";
-"NumericKeyboard.return-key.Go"="Vai";
-"NumericKeyboard.return-key.Search"="Cerca";
-"NumericKeyboard.return-key.Join"="Connetti";
-"NumericKeyboard.return-key.Next"="Avanti";
-"NumericKeyboard.return-key.Route"="Itinerario";
-"NumericKeyboard.return-key.Send"="Invia";
-"NumericKeyboard.return-key.Done"="Fine";
-"NumericKeyboard.return-key.Save"="Salvare";
+"NumericKeyboard.return-key.default"="invio";
+"NumericKeyboard.return-key.go"="Vai";
+"NumericKeyboard.return-key.search"="Cerca";
+"NumericKeyboard.return-key.join"="Connetti";
+"NumericKeyboard.return-key.next"="Avanti";
+"NumericKeyboard.return-key.route"="Itinerario";
+"NumericKeyboard.return-key.send"="Invia";
+"NumericKeyboard.return-key.done"="Fine";
+"NumericKeyboard.return-key.save"="Salvare";

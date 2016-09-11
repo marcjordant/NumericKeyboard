@@ -7,12 +7,12 @@
 */
 
 
-"NumericKeyboard.return-key.Default"="Return";
-"NumericKeyboard.return-key.Go"="Öffnen";
-"NumericKeyboard.return-key.Search"="Suchen";
-"NumericKeyboard.return-key.Join"="Verbinden";
-"NumericKeyboard.return-key.Next"="Weiter";
-"NumericKeyboard.return-key.Route"="Route";
-"NumericKeyboard.return-key.Send"="Senden";
-"NumericKeyboard.return-key.Done"="Fertig";
-"NumericKeyboard.return-key.Save"="Speichern";
+"NumericKeyboard.return-key.default"="Return";
+"NumericKeyboard.return-key.go"="Öffnen";
+"NumericKeyboard.return-key.search"="Suchen";
+"NumericKeyboard.return-key.join"="Verbinden";
+"NumericKeyboard.return-key.next"="Weiter";
+"NumericKeyboard.return-key.route"="Route";
+"NumericKeyboard.return-key.send"="Senden";
+"NumericKeyboard.return-key.done"="Fertig";
+"NumericKeyboard.return-key.save"="Speichern";

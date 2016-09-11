@@ -7,12 +7,12 @@
 */
 
 
-"NumericKeyboard.return-key.Default"="intro";
-"NumericKeyboard.return-key.Go"="Ir";
-"NumericKeyboard.return-key.Search"="Buscar";
-"NumericKeyboard.return-key.Join"="Conectar";
-"NumericKeyboard.return-key.Next"="Siguiente";
-"NumericKeyboard.return-key.Route"="Ruta";
-"NumericKeyboard.return-key.Send"="Enviar";
-"NumericKeyboard.return-key.Done"="Aceptar";
-"NumericKeyboard.return-key.Save"="Guardar";
+"NumericKeyboard.return-key.default"="intro";
+"NumericKeyboard.return-key.go"="Ir";
+"NumericKeyboard.return-key.search"="Buscar";
+"NumericKeyboard.return-key.join"="Conectar";
+"NumericKeyboard.return-key.next"="Siguiente";
+"NumericKeyboard.return-key.route"="Ruta";
+"NumericKeyboard.return-key.send"="Enviar";
+"NumericKeyboard.return-key.done"="Aceptar";
+"NumericKeyboard.return-key.save"="Guardar";
