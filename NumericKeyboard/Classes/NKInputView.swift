@@ -110,7 +110,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
     
     func text() -> String {
       switch self {
-      case .custom(let text, let actionButton):
+      case .custom(let text, let _):
         return text
       default:
         let podBundle = Bundle(for: NKInputView.self)
@@ -124,7 +124,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
       switch self {
       case .save, .search, .go:
         return UIColor(red: 9/255.0, green: 126/255.0, blue: 254/255.0, alpha: 1)
-      case .custom(let text, let actionButton) where actionButton:
+      case .custom(let _, let actionButton) where actionButton:
         return UIColor(red: 9/255.0, green: 126/255.0, blue: 254/255.0, alpha: 1)
       default:
         return nil
@@ -135,7 +135,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
       switch self {
       case .save, .search, .go:
         return UIColor.white
-      case .custom(let text, let actionButton) where actionButton:
+      case .custom(let _, let actionButton) where actionButton:
         return UIColor.white
       default:
         return nil
@@ -228,7 +228,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
    - parameter at: the index of the button
    - parameter action: the block of code to execute when the UIControlEvents.touchUpInside event is triggered for this button
    */
-  open func setAdditionalButton(title title: String, at index: AdditionalButtonIndex, action: @escaping () -> Void)
+  open func setAdditionalButton(title: String, at index: AdditionalButtonIndex, action: @escaping () -> Void)
   {
     removeAdditionalButton(at: index)
     
@@ -392,7 +392,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
     case TAG_B_RETURN:
       if isTextField() {
         let textField = textView as! UITextField
-        textField.delegate?.textFieldShouldReturn?(textField)
+        let _ = textField.delegate?.textFieldShouldReturn?(textField)
       }
       else if isTextView() {
         textView?.insertText("\n")
