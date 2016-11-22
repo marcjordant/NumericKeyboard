@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.0
+
+_November 22, 2016_
+
+ * Added additional/optional buttons
+ * Fix for action button color
+
 ## 1.2.0
 
 _September 11, 2016_
