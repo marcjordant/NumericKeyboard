@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -13,21 +17,21 @@
             <subviews>
                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0O-fJ-CYU" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="194" y="17" width="80" height="80"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="80" id="EHA-CI-9h9"/>
                         <constraint firstAttribute="width" constant="80" id="dPV-3H-6v7"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                     <state key="normal" title="7">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -36,17 +40,17 @@
                 </button>
                 <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRG-jj-cDY" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="294" y="17" width="80" height="80"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                     <state key="normal" title="8">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -55,17 +59,17 @@
                 </button>
                 <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gdp-oH-mXS" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="394" y="17" width="80" height="80"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                     <state key="normal" title="9">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -74,22 +78,22 @@
                 </button>
                 <button opaque="NO" tag="12" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fXF-oo-oYB" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="704" y="249" width="56" height="56"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="56" id="A4v-0V-yTv"/>
                         <constraint firstAttribute="height" constant="56" id="Q39-pb-xHE"/>
                     </constraints>
-                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <inset key="imageEdgeInsets" minX="10" minY="15" maxX="10" maxY="15"/>
                     <state key="normal" image="KeyboardDismiss">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -98,17 +102,17 @@
                 </button>
                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SEW-66-qQt" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="294" y="217" width="80" height="80"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                     <state key="normal" title="2">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -117,17 +121,17 @@
                 </button>
                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lC4-EB-Q98" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="394" y="217" width="80" height="80"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                     <state key="normal" title="3">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -136,17 +140,17 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hZI-aM-QDM" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="494" y="17" width="80" height="80"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                     <state key="normal" title="0">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -155,17 +159,17 @@
                 </button>
                 <button opaque="NO" tag="11" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rHB-9R-CP7" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="494" y="117" width="80" height="80"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                     <state key="normal" title="+">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -174,7 +178,7 @@
                 </button>
                 <button opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhw-6S-9Wg" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="670" y="129" width="90" height="56"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="Njw-LL-LvJ"/>
                         <constraint firstAttribute="height" constant="56" id="xdC-d9-p5w"/>
@@ -182,14 +186,14 @@
                     <fontDescription key="fontDescription" type="system" pointSize="20"/>
                     <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                     <state key="normal" title="next">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.71764705882352942" green="0.74901960784313726" blue="0.792156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705882352942" green="0.74901960784313726" blue="0.792156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -198,21 +202,21 @@
                 </button>
                 <button opaque="NO" tag="13" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U2D-pa-qza" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="670" y="20" width="90" height="56"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="90" id="11K-ba-aYk"/>
                         <constraint firstAttribute="height" constant="56" id="QqA-XM-IVu"/>
                     </constraints>
-                    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <state key="normal" image="KeyboardErase">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79215686269999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -221,17 +225,17 @@
                 </button>
                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jbg-g1-63I" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="194" y="217" width="80" height="80"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                     <state key="normal" title="1">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -240,17 +244,17 @@
                 </button>
                 <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVV-wm-yN2" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="494" y="217" width="80" height="80"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                     <state key="normal" title=".">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -259,7 +263,7 @@
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nht-rx-RhO">
                     <rect key="frame" x="384" y="17" width="0.0" height="280"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="280" id="7Aa-dJ-yrS"/>
                         <constraint firstAttribute="width" id="ObZ-Yd-vNu"/>
@@ -267,17 +271,17 @@
                 </view>
                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfJ-tP-FLt" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="194" y="117" width="80" height="80"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                     <state key="normal" title="4">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -286,17 +290,17 @@
                 </button>
                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f4k-T7-cfU" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="294" y="117" width="80" height="80"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                     <state key="normal" title="5">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
@@ -305,33 +309,120 @@
                 </button>
                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBh-n8-4YM" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
                     <rect key="frame" x="394" y="117" width="80" height="80"/>
-                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <fontDescription key="fontDescription" type="system" weight="light" pointSize="25"/>
                     <state key="normal" title="6">
-                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
                     <userDefinedRuntimeAttributes>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
-                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                         <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
-                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </userDefinedRuntimeAttribute>
                     </userDefinedRuntimeAttributes>
                     <connections>
                         <action selector="buttonPressed:" destination="-2" eventType="touchUpInside" id="alO-86-uas"/>
                     </connections>
                 </button>
+                <button hidden="YES" opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ab8-E1-16p" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="8" y="17" width="90" height="56"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="Eih-ir-OoF"/>
+                        <constraint firstAttribute="height" constant="56" id="Iza-Wm-pYd"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button hidden="YES" opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXc-os-Fr2" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="8" y="166" width="90" height="56"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="JoX-rF-slx"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="XBb-Fr-YLC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button hidden="YES" opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1p0-zW-oal" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="8" y="241" width="90" height="56"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="fdO-VU-0ge"/>
+                        <constraint firstAttribute="height" constant="56" id="xLG-Lg-ugM"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button hidden="YES" opaque="NO" tag="14" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WO4-fJ-88R" customClass="NKKeyboardButton" customModule="NumericKeyboard" customModuleProvider="target">
+                    <rect key="frame" x="8" y="92" width="90" height="56"/>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="90" id="BxG-lE-0xt"/>
+                        <constraint firstAttribute="height" constant="56" id="xIy-CH-rXe"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal">
+                        <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateNormal">
+                            <color key="value" red="0.71764705880000002" green="0.74901960779999999" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColorForStateHighlighted">
+                            <color key="value" red="0.99607843139999996" green="0.99607843139999996" blue="0.99607843139999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
             </subviews>
-            <color key="backgroundColor" red="0.83921568627450982" green="0.85490196078431369" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" red="0.83921568627450982" green="0.85490196078431369" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="SEW-66-qQt" firstAttribute="leading" secondItem="FRG-jj-cDY" secondAttribute="leading" id="0Bq-U6-G54"/>
                 <constraint firstItem="hZI-aM-QDM" firstAttribute="top" secondItem="FRG-jj-cDY" secondAttribute="top" id="0u1-FG-72P"/>
                 <constraint firstItem="xfJ-tP-FLt" firstAttribute="width" secondItem="d0O-fJ-CYU" secondAttribute="width" id="1qx-Wn-YMm"/>
+                <constraint firstItem="jbg-g1-63I" firstAttribute="bottom" secondItem="1p0-zW-oal" secondAttribute="bottom" id="29c-rr-CsC"/>
                 <constraint firstItem="xfJ-tP-FLt" firstAttribute="leading" secondItem="d0O-fJ-CYU" secondAttribute="leading" id="2Pw-3g-RdH"/>
+                <constraint firstItem="1p0-zW-oal" firstAttribute="leading" secondItem="Ab8-E1-16p" secondAttribute="leading" id="2cK-N7-V8m"/>
                 <constraint firstItem="aBh-n8-4YM" firstAttribute="centerY" secondItem="xfJ-tP-FLt" secondAttribute="centerY" id="2eE-xa-TuK"/>
                 <constraint firstItem="IVV-wm-yN2" firstAttribute="leading" secondItem="hZI-aM-QDM" secondAttribute="leading" id="3Wu-7Y-LUS"/>
                 <constraint firstItem="aBh-n8-4YM" firstAttribute="height" secondItem="d0O-fJ-CYU" secondAttribute="height" id="414-LP-LhC"/>
+                <constraint firstItem="d0O-fJ-CYU" firstAttribute="top" secondItem="Ab8-E1-16p" secondAttribute="top" id="58e-gd-1jY"/>
                 <constraint firstItem="jbg-g1-63I" firstAttribute="height" secondItem="d0O-fJ-CYU" secondAttribute="height" id="5Ai-Iq-DTV"/>
                 <constraint firstItem="IVV-wm-yN2" firstAttribute="height" secondItem="d0O-fJ-CYU" secondAttribute="height" id="5Qc-fh-wZm"/>
                 <constraint firstItem="aBh-n8-4YM" firstAttribute="width" secondItem="d0O-fJ-CYU" secondAttribute="width" id="6Cf-lR-dYo"/>
@@ -353,6 +444,7 @@
                 <constraint firstItem="rHB-9R-CP7" firstAttribute="width" secondItem="d0O-fJ-CYU" secondAttribute="width" id="W3c-o3-xhM"/>
                 <constraint firstItem="SEW-66-qQt" firstAttribute="width" secondItem="d0O-fJ-CYU" secondAttribute="width" id="WdU-Lm-FTj"/>
                 <constraint firstAttribute="trailing" secondItem="Dhw-6S-9Wg" secondAttribute="trailing" constant="8" id="Zgc-KL-tzd"/>
+                <constraint firstItem="UXc-os-Fr2" firstAttribute="leading" secondItem="Ab8-E1-16p" secondAttribute="leading" id="ZrH-FV-bh0"/>
                 <constraint firstItem="U2D-pa-qza" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="aBO-10-sju"/>
                 <constraint firstAttribute="trailing" secondItem="U2D-pa-qza" secondAttribute="trailing" constant="8" id="aVl-43-13J"/>
                 <constraint firstItem="rHB-9R-CP7" firstAttribute="centerY" secondItem="xfJ-tP-FLt" secondAttribute="centerY" id="afB-Un-KHq"/>
@@ -361,20 +453,26 @@
                 <constraint firstItem="f4k-T7-cfU" firstAttribute="centerY" secondItem="xfJ-tP-FLt" secondAttribute="centerY" id="csh-C8-cM8"/>
                 <constraint firstItem="hZI-aM-QDM" firstAttribute="height" secondItem="d0O-fJ-CYU" secondAttribute="height" id="f1i-PG-bJI"/>
                 <constraint firstItem="gdp-oH-mXS" firstAttribute="top" secondItem="FRG-jj-cDY" secondAttribute="top" id="fBE-7N-J1w"/>
+                <constraint firstItem="Ab8-E1-16p" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="fIS-hz-ojV"/>
                 <constraint firstItem="f4k-T7-cfU" firstAttribute="width" secondItem="d0O-fJ-CYU" secondAttribute="width" id="fcd-15-3GP"/>
                 <constraint firstItem="gdp-oH-mXS" firstAttribute="width" secondItem="d0O-fJ-CYU" secondAttribute="width" id="hyw-k9-Zon"/>
+                <constraint firstItem="UXc-os-Fr2" firstAttribute="top" secondItem="WO4-fJ-88R" secondAttribute="bottom" constant="18" id="ipZ-o1-XZf"/>
                 <constraint firstItem="rHB-9R-CP7" firstAttribute="leading" secondItem="hZI-aM-QDM" secondAttribute="leading" id="jU2-iQ-iWq"/>
                 <constraint firstItem="Dhw-6S-9Wg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="jdV-ch-33E"/>
                 <constraint firstItem="IVV-wm-yN2" firstAttribute="bottom" secondItem="jbg-g1-63I" secondAttribute="bottom" id="kUd-9M-bjv"/>
                 <constraint firstItem="jbg-g1-63I" firstAttribute="leading" secondItem="d0O-fJ-CYU" secondAttribute="leading" id="kzf-cK-FC2"/>
+                <constraint firstItem="UXc-os-Fr2" firstAttribute="top" secondItem="WO4-fJ-88R" secondAttribute="bottom" constant="18" id="lo8-Zf-E3R"/>
                 <constraint firstItem="SEW-66-qQt" firstAttribute="height" secondItem="d0O-fJ-CYU" secondAttribute="height" id="nbk-1X-w3I"/>
                 <constraint firstItem="SEW-66-qQt" firstAttribute="bottom" secondItem="jbg-g1-63I" secondAttribute="bottom" id="obb-dL-ZPe"/>
                 <constraint firstItem="IVV-wm-yN2" firstAttribute="width" secondItem="d0O-fJ-CYU" secondAttribute="width" id="pM7-P5-CRW"/>
                 <constraint firstItem="gdp-oH-mXS" firstAttribute="height" secondItem="d0O-fJ-CYU" secondAttribute="height" id="pY0-cw-UH0"/>
+                <constraint firstItem="1p0-zW-oal" firstAttribute="top" secondItem="UXc-os-Fr2" secondAttribute="bottom" constant="19" id="sZF-jQ-Dql"/>
                 <constraint firstItem="hZI-aM-QDM" firstAttribute="leading" secondItem="gdp-oH-mXS" secondAttribute="trailing" constant="20" id="t4A-0C-eUG"/>
                 <constraint firstItem="lC4-EB-Q98" firstAttribute="width" secondItem="d0O-fJ-CYU" secondAttribute="width" id="tTd-xn-Uch"/>
                 <constraint firstItem="FRG-jj-cDY" firstAttribute="height" secondItem="d0O-fJ-CYU" secondAttribute="height" id="upP-cO-VWv"/>
+                <constraint firstItem="WO4-fJ-88R" firstAttribute="top" secondItem="Ab8-E1-16p" secondAttribute="bottom" constant="19" id="vY2-zE-7DO"/>
                 <constraint firstItem="nht-rx-RhO" firstAttribute="top" secondItem="d0O-fJ-CYU" secondAttribute="top" id="wXy-7n-vBx"/>
+                <constraint firstItem="WO4-fJ-88R" firstAttribute="leading" secondItem="Ab8-E1-16p" secondAttribute="leading" id="y7z-Ey-3it"/>
                 <constraint firstItem="aBh-n8-4YM" firstAttribute="leading" secondItem="gdp-oH-mXS" secondAttribute="leading" id="yLA-C5-lNJ"/>
                 <constraint firstAttribute="bottom" secondItem="fXF-oo-oYB" secondAttribute="bottom" constant="8" id="yXm-kr-U62"/>
                 <constraint firstItem="nht-rx-RhO" firstAttribute="bottom" secondItem="jbg-g1-63I" secondAttribute="bottom" id="yiD-vP-q2Q"/>
@@ -383,6 +481,10 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="bDot" destination="IVV-wm-yN2" id="YTK-m4-LLP"/>
+                <outlet property="bLeft1" destination="Ab8-E1-16p" id="lY6-7p-FcT"/>
+                <outlet property="bLeft2" destination="WO4-fJ-88R" id="RNq-Il-pHX"/>
+                <outlet property="bLeft3" destination="UXc-os-Fr2" id="DAL-zg-I3R"/>
+                <outlet property="bLeft4" destination="1p0-zW-oal" id="uL2-pM-fsg"/>
                 <outlet property="bNext" destination="Dhw-6S-9Wg" id="rFc-z9-QVC"/>
                 <outlet property="bPlus" destination="rHB-9R-CP7" id="ZGB-vK-Lri"/>
             </connections>

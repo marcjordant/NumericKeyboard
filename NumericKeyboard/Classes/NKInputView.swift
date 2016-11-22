@@ -143,6 +143,13 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
     }
   }
   
+  /**
+   Indexes of additional buttons (those that can be added on the left)
+   */
+  public enum AdditionalButtonIndex {
+    case one, two, three, four
+  }
+
   
   // MARK: - vars -
 
@@ -155,14 +162,24 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
   fileprivate let TAG_B_BACKWARD = 13
   fileprivate let TAG_B_RETURN = 14
 
+  fileprivate var bLeft1Action: (() -> Void)?
+  fileprivate var bLeft2Action: (() -> Void)?
+  fileprivate var bLeft3Action: (() -> Void)?
+  fileprivate var bLeft4Action: (() -> Void)?
+  
   
   // MARK: - Outlets -
 
   @IBOutlet fileprivate var bNext: NKKeyboardButton!
   @IBOutlet fileprivate var bPlus: UIButton!
   @IBOutlet fileprivate var bDot: UIButton!
-  
-  
+
+  @IBOutlet fileprivate var bLeft1: NKKeyboardButton!
+  @IBOutlet fileprivate var bLeft2: NKKeyboardButton!
+  @IBOutlet fileprivate var bLeft3: NKKeyboardButton!
+  @IBOutlet fileprivate var bLeft4: NKKeyboardButton!
+
+
   // MARK: - Static methods -
 
   /**
@@ -199,6 +216,66 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
     instance.setup(textView, type: type, returnKeyType: returnKeyType)
     
     return instance
+  }
+
+  /**
+   Sets the additional button at the given index.
+   
+   Up to 4 additional buttons can be added on the left of the keyboard.
+   The place of each is specified with the index parameter.
+   
+   - parameter title: the title of the button
+   - parameter at: the index of the button
+   - parameter action: the block of code to execute when the UIControlEvents.touchUpInside event is triggered for this button
+   */
+  open func setAdditionalButton(title title: String, at index: AdditionalButtonIndex, action: @escaping () -> Void)
+  {
+    removeAdditionalButton(at: index)
+    
+    var button = bLeft1
+    
+    switch index {
+    case .one:
+      button = bLeft1
+      bLeft1Action = action
+    case .two:
+      button = bLeft2
+      bLeft2Action = action
+    case .three:
+      button = bLeft3
+      bLeft3Action = action
+    case .four:
+      button = bLeft4
+      bLeft4Action = action
+    }
+    
+    button?.returnType = .custom(text: title, actionButton: true)
+    button?.isHidden = false
+    button?.addTarget(self, action: #selector(NKInputView.additionalButtonTouched(sender:)), for: UIControlEvents.touchUpInside)
+  }
+
+  /**
+   Removes the additional button at the given index.
+   
+   - parameter at: the index of the button
+   */
+  open func removeAdditionalButton(at index: AdditionalButtonIndex)
+  {
+    var button = bLeft1
+    
+    switch index {
+    case .one:
+      button = bLeft1
+    case .two:
+      button = bLeft2
+    case .three:
+      button = bLeft3
+    case .four:
+      button = bLeft4
+    }
+
+    button?.isHidden = true
+    button?.removeTarget(nil, action: nil, for: UIControlEvents.touchUpInside)
   }
 
   
@@ -330,6 +407,22 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
         textView.resignFirstResponder()
       }
       
+    default:
+      break
+    }
+  }
+  
+  @objc fileprivate func additionalButtonTouched(sender: UIButton)
+  {
+    switch sender {
+    case bLeft1:
+      bLeft1Action?()
+    case bLeft2:
+      bLeft2Action?()
+    case bLeft3:
+      bLeft3Action?()
+    case bLeft4:
+      bLeft4Action?()
     default:
       break
     }
