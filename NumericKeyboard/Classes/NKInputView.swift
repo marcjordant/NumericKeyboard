@@ -179,7 +179,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
    - important:
    Only affect the input view on iPad. Do nothing on iPhone or iPod
    */
-  open static func with(_ textView: UITextInput,
+  @discardableResult open static func with(_ textView: UITextInput,
                           type: NKKeyboardType = .decimalPad,
                           returnKeyType: NKKeyboardReturnKeyType = .default) -> NKInputView?
   {
