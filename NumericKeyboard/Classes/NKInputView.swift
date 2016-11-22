@@ -105,12 +105,12 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
      - parameters:
         - text: the custom text to use for the return key
      */
-    case custom(text: String)
+    case custom(text: String, actionButton: Bool)
     
     
     func text() -> String {
       switch self {
-      case .custom(let text):
+      case .custom(let text, let actionButton):
         return text
       default:
         let podBundle = Bundle(for: NKInputView.self)
@@ -122,16 +122,20 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
     
     func backgroundColor() -> UIColor? {
       switch self {
-      case .default, .next:
-        return nil
-      default:
+      case .save, .search, .go:
         return UIColor(red: 9/255.0, green: 126/255.0, blue: 254/255.0, alpha: 1)
+      case .custom(let text, let actionButton) where actionButton:
+        return UIColor(red: 9/255.0, green: 126/255.0, blue: 254/255.0, alpha: 1)
+      default:
+        return nil
       }
     }
     
     func textColor() -> UIColor? {
       switch self {
-      case .save, .search:
+      case .save, .search, .go:
+        return UIColor.white
+      case .custom(let text, let actionButton) where actionButton:
         return UIColor.white
       default:
         return nil
