@@ -20,11 +20,15 @@ class ViewController: UIViewController, UITextFieldDelegate
   {
     super.viewDidLoad()
     
-    let _ = NKInputView.with(textFieldNumberPad, type: NKInputView.NKKeyboardType.numberPad, returnKeyType: NKInputView.NKKeyboardReturnKeyType.next)
+    NKInputView.with(textFieldNumberPad, type: NKInputView.NKKeyboardType.numberPad, returnKeyType: NKInputView.NKKeyboardReturnKeyType.next)
 
-    let _ = NKInputView.with(textFieldDecimalPad, type: NKInputView.NKKeyboardType.decimalPad, returnKeyType: NKInputView.NKKeyboardReturnKeyType.next)
+    NKInputView.with(textFieldDecimalPad, type: NKInputView.NKKeyboardType.decimalPad, returnKeyType: NKInputView.NKKeyboardReturnKeyType.next)
     
-    let _ = NKInputView.with(textFieldPhonePad, type: NKInputView.NKKeyboardType.phonePad, returnKeyType: .custom(text: "Hello"))
+    let inputView = NKInputView.with(textFieldPhonePad, type: NKInputView.NKKeyboardType.phonePad, returnKeyType: .custom(text: "Hello", actionButton: true))
+    
+    inputView?.setAdditionalButton(title: "Other Button 1", at: .one) {
+      print("additionalButton 1 Touched")
+    }
   }
   
   
