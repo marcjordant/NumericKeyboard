@@ -1,0 +1,18 @@
+/* 
+  NKLocalizable.strings
+  NumericKeyboard
+
+  Created by Marc Jordant on 24/07/16.
+  Copyright © 2016 singleTapps. All rights reserved.
+*/
+
+
+"NumericKeyboard.return-key.default"="Nhập";
+"NumericKeyboard.return-key.go"="Đi";
+"NumericKeyboard.return-key.search"="Tìm kiếm";
+"NumericKeyboard.return-key.join"="Tham gia";
+"NumericKeyboard.return-key.next"="Tiếp";
+"NumericKeyboard.return-key.route"="Chỉ dẫn";
+"NumericKeyboard.return-key.send"="Gửi";
+"NumericKeyboard.return-key.done"="Xong";
+"NumericKeyboard.return-key.save"="Lưu";

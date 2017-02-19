@@ -58,6 +58,7 @@
 		3B5396367E544105C0E75C9DBD0F4973 /* Pods-NumericKeyboard_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NumericKeyboard_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3C8C6BD10A50900D12CC762AC2633955 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3EC24757538A56025B7453ED03887165 /* NumericKeyboard.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NumericKeyboard.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		41710F5F1E59755B0088EDBE /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/Localizable.strings; sourceTree = "<group>"; };
 		43BF59598166E50B075E4C95AE448C63 /* Pods-NumericKeyboard_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NumericKeyboard_Example-dummy.m"; sourceTree = "<group>"; };
 		440BC532D5FF3ACBEA22B6AA97C36504 /* NumericKeyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NumericKeyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		454C908DF1E3ED62A696A412755817BF /* Pods-NumericKeyboard_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-NumericKeyboard_Tests.modulemap"; sourceTree = "<group>"; };
@@ -421,6 +422,7 @@
 				es,
 				it,
 				nl,
+				vi,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = 141A6FF09786640C63ACF1A8DCCC5FAF /* Products */;
@@ -517,6 +519,7 @@
 				2DBA224B1D47822800463038 /* es */,
 				2DBA224C1D47822C00463038 /* it */,
 				2DBA224D1D47823400463038 /* nl */,
+				41710F5F1E59755B0088EDBE /* vi */,
 			);
 			name = Localizable.strings;
 			path = .;
