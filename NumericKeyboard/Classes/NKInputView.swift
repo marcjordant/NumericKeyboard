@@ -153,7 +153,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
   
   // MARK: - vars -
 
-  fileprivate weak var textView: UITextInput?
+  fileprivate weak var textView: NumericTextInput?
   
   
   // MARK: - Private vars -
@@ -196,7 +196,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
    - important:
    Only affect the input view on iPad. Do nothing on iPhone or iPod
    */
-  @discardableResult open static func with(_ textView: UITextInput,
+  @discardableResult open static func with(_ textView: NumericTextInput,
                           type: NKKeyboardType = .decimalPad,
                           returnKeyType: NKKeyboardReturnKeyType = .default) -> NKInputView?
   {
@@ -282,7 +282,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
   // MARK: - Private methods -
 
   // Initialize the view
-  fileprivate func setup(_ textView: UITextInput, type: NKKeyboardType, returnKeyType: NKKeyboardReturnKeyType = .default)
+  fileprivate func setup(_ textView: NumericTextInput, type: NKKeyboardType, returnKeyType: NKKeyboardReturnKeyType = .default)
   {
     self.textView = textView
     
@@ -370,42 +370,17 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
       let decimalChar = (Locale.current as NSLocale).object(forKey: NSLocale.Key.decimalSeparator) as? String ?? "."
       let buttonsValues = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", decimalChar, "+"]
       let char = buttonsValues[sender.tag]
-      textView?.insertText(char)
-      
-      if isTextField() {
-        NotificationCenter.default.post(name: NSNotification.Name.UITextFieldTextDidChange, object: self.textView)
-      }
-      else if isTextView() {
-        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self.textView)
-      }
-      
-    case TAG_B_BACKWARD:
-      textView?.deleteBackward()
 
-      if isTextField() {
-        NotificationCenter.default.post(name: NSNotification.Name.UITextFieldTextDidChange, object: self.textView)
-      }
-      else if isTextView() {
-        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self.textView)
-      }
+      textView?.numericInsertText(char)
+
+    case TAG_B_BACKWARD:
+      textView?.numericDeleteBackward()
       
     case TAG_B_RETURN:
-      if isTextField() {
-        let textField = textView as! UITextField
-        let _ = textField.delegate?.textFieldShouldReturn?(textField)
-      }
-      else if isTextView() {
-        textView?.insertText("\n")
-        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self.textView)
-      }
+      textView?.numericInsertReturn()
 
     case TAG_B_DISMISS:
-      if let textView = self.textView as? UITextField {
-        textView.resignFirstResponder()
-      }
-      if let textView = self.textView as? UITextView {
-        textView.resignFirstResponder()
-      }
+      textView?.numericDismiss()
       
     default:
       break
@@ -427,4 +402,94 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
       break
     }
   }
+}
+
+public protocol NumericTextInput: UITextInput {
+    func numericInsertText(_ text: String)
+    func numericDeleteBackward()
+    func numericInsertReturn()
+    func numericDismiss()
+
+    var inputView: UIView? { get set }
+}
+
+public extension UITextRange {
+    func range(for textField: UITextField) -> NSRange {
+        let startPos = textField.offset(from: textField.beginningOfDocument, to: self.start)
+        let endPos = textField.offset(from: textField.beginningOfDocument, to: self.end)
+
+        return NSMakeRange(startPos, endPos - startPos)
+    }
+}
+
+extension UITextField: NumericTextInput {
+    func selectedRange() -> NSRange? {
+        if let range = self.selectedTextRange {
+            return range.range(for: self)
+        }
+
+        return nil
+    }
+
+    public func numericInsertText(_ text: String) {
+        var shouldChange = true
+
+        if let delegate = self.delegate, let range = self.selectedRange() {
+            shouldChange = delegate.textField?(self, shouldChangeCharactersIn: range, replacementString: text) ?? true
+        }
+
+        if shouldChange {
+            self.insertText(text)
+
+            NotificationCenter.default.post(name: NSNotification.Name.UITextFieldTextDidChange, object: self)
+        }
+    }
+
+    public func numericDeleteBackward() {
+        var shouldChange = true
+
+        if let delegate = self.delegate, let range = self.selectedTextRange {
+            var newRange = range
+            if let newStart = self.position(from: range.start, in: .left, offset: 1), range.start == range.end {
+                newRange = self.textRange(from: newStart, to: range.end) ?? newRange
+            }
+
+            let nsRange = newRange.range(for: self)
+            shouldChange = delegate.textField?(self, shouldChangeCharactersIn: nsRange, replacementString: "") ?? true
+        }
+
+        if shouldChange {
+            self.deleteBackward()
+            NotificationCenter.default.post(name: NSNotification.Name.UITextFieldTextDidChange, object: self)
+        }
+    }
+
+    public func numericInsertReturn() {
+        let _ = self.delegate?.textFieldShouldReturn?(self)
+    }
+
+    public func numericDismiss() {
+        self.resignFirstResponder()
+    }
+}
+
+extension UITextView: NumericTextInput {
+    public func numericInsertText(_ text: String) {
+        self.insertText(text)
+        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self)
+    }
+
+    public func numericDeleteBackward() {
+        self.deleteBackward()
+        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self)
+    }
+
+    public func numericInsertReturn() {
+        self.insertText("\n")
+        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self)
+    }
+
+    public func numericDismiss() {
+        self.resignFirstResponder()
+    }
 }
