@@ -5,7 +5,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NumericKeyboard'
-  s.version          = '1.3.0'
+  s.version          = '1.3.0.1'
   s.summary          = 'NumericKeyboard is a input view for UITextField & UITextView that shows a numeric entry keyboard on iPad.'
 
   s.description      = <<-DESC

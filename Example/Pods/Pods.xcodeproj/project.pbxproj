@@ -404,7 +404,7 @@
 						LastSwiftMigration = 0800;
 					};
 					63916A8B640E1C6D78CAFB70EA0A79E4 = {
-						LastSwiftMigration = 0800;
+						LastSwiftMigration = 0900;
 					};
 					E38EA9CC6842926F908206E5AD975257 = {
 						LastSwiftMigration = 0800;
@@ -746,7 +746,8 @@
 				PRODUCT_NAME = NumericKeyboard;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -830,7 +831,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

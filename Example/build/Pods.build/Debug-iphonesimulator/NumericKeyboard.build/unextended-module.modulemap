@@ -1,0 +1,10 @@
+framework module NumericKeyboard {
+  umbrella header "NumericKeyboard-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module NumericKeyboard.__Swift {
+    exclude header "NumericKeyboard-Swift.h"
+}
