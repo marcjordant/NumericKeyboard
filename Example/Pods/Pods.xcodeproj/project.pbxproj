@@ -51,6 +51,7 @@
 		1BCADA8BC66377314999D57D032C4414 /* NumericKeyboard.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NumericKeyboard.xcconfig; sourceTree = "<group>"; };
 		1C49BF3E3C34F0A0178544F92B6C4BD8 /* NumericKeyboard-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NumericKeyboard-umbrella.h"; sourceTree = "<group>"; };
 		241B469DB307B75E1005D4D89A97459C /* Pods-NumericKeyboard_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NumericKeyboard_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2D4B229F1FAA2E3F00547E6C /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2DBA224A1D47822200463038 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2DBA224B1D47822800463038 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		2DBA224C1D47822C00463038 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -421,6 +422,7 @@
 				es,
 				it,
 				nl,
+				sv,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
 			productRefGroup = 141A6FF09786640C63ACF1A8DCCC5FAF /* Products */;
@@ -517,6 +519,7 @@
 				2DBA224B1D47822800463038 /* es */,
 				2DBA224C1D47822C00463038 /* it */,
 				2DBA224D1D47823400463038 /* nl */,
+				2D4B229F1FAA2E3F00547E6C /* sv */,
 			);
 			name = Localizable.strings;
 			path = .;
