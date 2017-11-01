@@ -25,6 +25,8 @@ The return key texts are available in
   * German
   * Spanish
   * Italian
+  * Hebrew
+  * Swedish
 
 
 #### New language

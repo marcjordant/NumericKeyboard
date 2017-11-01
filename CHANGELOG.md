@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.4.0
+
+_November 1, 2017_
+
+ * Added Hebrew localization
+ * Added Swedish localization
+
 ## 1.3.0
 
 _November 22, 2016_
