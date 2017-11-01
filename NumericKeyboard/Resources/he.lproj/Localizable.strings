@@ -1,0 +1,18 @@
+/* 
+  NKLocalizable.strings
+  NumericKeyboard
+
+  Created by Marc Jordant on 24/07/16.
+  Copyright © 2016 singleTapps. All rights reserved.
+*/
+
+
+"NumericKeyboard.return-key.default"="אישור";
+"NumericKeyboard.return-key.go"="המשך";
+"NumericKeyboard.return-key.search"="חפש";
+"NumericKeyboard.return-key.join"="הצטרף";
+"NumericKeyboard.return-key.next"="הבא";
+"NumericKeyboard.return-key.route"="נתיב";
+"NumericKeyboard.return-key.send"="שלח";
+"NumericKeyboard.return-key.done"="סיום";
+"NumericKeyboard.return-key.save"="שמור";
