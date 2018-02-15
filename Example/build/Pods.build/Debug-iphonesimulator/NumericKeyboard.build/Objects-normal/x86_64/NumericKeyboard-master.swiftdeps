@@ -1,6 +1,0 @@
-version: "Apple Swift version 4.0 (swiftlang-900.0.65.2 clang-900.0.37)"
-options: "8afee3c44c823c9b7a977df2a1fa4eeb"
-build_time: [1508359934, 726102000]
-inputs:
-  "/Users/ryanjm/code/libs/NumericKeyboard/NumericKeyboard/Classes/NKInputView.swift": [1495492162, 0]
-  "/Users/ryanjm/code/libs/NumericKeyboard/NumericKeyboard/Classes/NKKeyboardButton.swift": [1495483646, 0]

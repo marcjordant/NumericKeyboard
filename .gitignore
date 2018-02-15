@@ -11,6 +11,7 @@ integration/tmp
 # Xcode
 # https://github.com/github/gitignore/blob/master/Objective-C.gitignore
 build/
+Example/build/
 *.pbxuser
 !default.pbxuser
 *.mode1v3
