@@ -1,0 +1,18 @@
+/* 
+  NKLocalizable.strings
+  NumericKeyboard
+
+  Created by Marc Jordant on 24/07/16.
+  Copyright © 2016 singleTapps. All rights reserved.
+*/
+
+
+"NumericKeyboard.return-key.default"="retornar";
+"NumericKeyboard.return-key.go"="Ir";
+"NumericKeyboard.return-key.search"="Buscar";
+"NumericKeyboard.return-key.join"="Entrar";
+"NumericKeyboard.return-key.next"="Próximo";
+"NumericKeyboard.return-key.route"="Rota";
+"NumericKeyboard.return-key.send"="Enviar";
+"NumericKeyboard.return-key.done"="Feito";
+"NumericKeyboard.return-key.save"="Salvar";
