@@ -196,7 +196,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
    - important:
    Only affect the input view on iPad. Do nothing on iPhone or iPod
    */
-  @discardableResult open static func with(_ textView: NumericTextInput,
+    @discardableResult public static func with(_ textView: NumericTextInput,
                           type: NKKeyboardType = .decimalPad,
                           returnKeyType: NKKeyboardReturnKeyType = .default) -> NKInputView?
   {
@@ -251,7 +251,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
     
     button?.returnType = .custom(text: title, actionButton: true)
     button?.isHidden = false
-    button?.addTarget(self, action: #selector(NKInputView.additionalButtonTouched(sender:)), for: UIControlEvents.touchUpInside)
+    button?.addTarget(self, action: #selector(NKInputView.additionalButtonTouched(sender:)), for: UIControl.Event.touchUpInside)
   }
 
   /**
@@ -275,7 +275,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
     }
 
     button?.isHidden = true
-    button?.removeTarget(nil, action: nil, for: UIControlEvents.touchUpInside)
+    button?.removeTarget(nil, action: nil, for: UIControl.Event.touchUpInside)
   }
 
   
@@ -309,7 +309,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
       bDot.isHidden = true
     }
     
-    bDot.setTitle((Locale.current as NSLocale).object(forKey: NSLocale.Key.decimalSeparator) as? String, for: UIControlState.normal)
+    bDot.setTitle((Locale.current as NSLocale).object(forKey: NSLocale.Key.decimalSeparator) as? String, for: UIControl.State.normal)
   }
   
   // Remove the Undo/Redo toolbar
@@ -441,7 +441,7 @@ extension UITextField: NumericTextInput {
         if shouldChange {
             self.insertText(text)
 
-            NotificationCenter.default.post(name: NSNotification.Name.UITextFieldTextDidChange, object: self)
+            NotificationCenter.default.post(name: UITextField.textDidChangeNotification, object: self)
         }
     }
 
@@ -460,7 +460,7 @@ extension UITextField: NumericTextInput {
 
         if shouldChange {
             self.deleteBackward()
-            NotificationCenter.default.post(name: NSNotification.Name.UITextFieldTextDidChange, object: self)
+            NotificationCenter.default.post(name: UITextField.textDidChangeNotification, object: self)
         }
     }
 
@@ -476,17 +476,17 @@ extension UITextField: NumericTextInput {
 extension UITextView: NumericTextInput {
     public func numericInsertText(_ text: String) {
         self.insertText(text)
-        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self)
+        NotificationCenter.default.post(name: UITextView.textDidChangeNotification, object: self)
     }
 
     public func numericDeleteBackward() {
         self.deleteBackward()
-        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self)
+        NotificationCenter.default.post(name: UITextView.textDidChangeNotification, object: self)
     }
 
     public func numericInsertReturn() {
         self.insertText("\n")
-        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self)
+        NotificationCenter.default.post(name: UITextView.textDidChangeNotification, object: self)
     }
 
     public func numericDismiss() {
