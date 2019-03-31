@@ -15,8 +15,8 @@ class NKKeyboardButton: UIButton
   
   var returnType = NKInputView.NKKeyboardReturnKeyType.default {
     didSet {
-      self.setTitle(returnType.text(), for: UIControlState())
-      self.setTitleColor(returnType.textColor() ?? UIColor.black, for: UIControlState.normal)
+        self.setTitle(returnType.text(), for: UIControl.State())
+        self.setTitleColor(returnType.textColor() ?? UIColor.black, for: UIControl.State.normal)
       self.backgroundColor = returnType.backgroundColor() ?? backgroundColorForStateNormal
     }
   }
