@@ -196,7 +196,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
    - important:
    Only affect the input view on iPad. Do nothing on iPhone or iPod
    */
-  @discardableResult open static func with(_ textView: UITextInput,
+  @discardableResult public static func with(_ textView: UITextInput,
                           type: NKKeyboardType = .decimalPad,
                           returnKeyType: NKKeyboardReturnKeyType = .default) -> NKInputView?
   {
@@ -251,7 +251,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
     
     button?.returnType = .custom(text: title, actionButton: true)
     button?.isHidden = false
-    button?.addTarget(self, action: #selector(NKInputView.additionalButtonTouched(sender:)), for: UIControlEvents.touchUpInside)
+    button?.addTarget(self, action: #selector(NKInputView.additionalButtonTouched(sender:)), for: UIControl.Event.touchUpInside)
   }
 
   /**
@@ -275,7 +275,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
     }
 
     button?.isHidden = true
-    button?.removeTarget(nil, action: nil, for: UIControlEvents.touchUpInside)
+    button?.removeTarget(nil, action: nil, for: UIControl.Event.touchUpInside)
   }
 
   
@@ -309,7 +309,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
       bDot.isHidden = true
     }
     
-    bDot.setTitle((Locale.current as NSLocale).object(forKey: NSLocale.Key.decimalSeparator) as? String, for: UIControlState.normal)
+    bDot.setTitle((Locale.current as NSLocale).object(forKey: NSLocale.Key.decimalSeparator) as? String, for: UIControl.State.normal)
   }
   
   // Remove the Undo/Redo toolbar
@@ -373,20 +373,20 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
       textView?.insertText(char)
       
       if isTextField() {
-        NotificationCenter.default.post(name: NSNotification.Name.UITextFieldTextDidChange, object: self.textView)
+        NotificationCenter.default.post(name: UITextField.textDidChangeNotification, object: self.textView)
       }
       else if isTextView() {
-        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self.textView)
+        NotificationCenter.default.post(name: UITextField.textDidChangeNotification, object: self.textView)
       }
       
     case TAG_B_BACKWARD:
       textView?.deleteBackward()
 
       if isTextField() {
-        NotificationCenter.default.post(name: NSNotification.Name.UITextFieldTextDidChange, object: self.textView)
+        NotificationCenter.default.post(name: UITextField.textDidChangeNotification, object: self.textView)
       }
       else if isTextView() {
-        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self.textView)
+        NotificationCenter.default.post(name: UITextField.textDidChangeNotification, object: self.textView)
       }
       
     case TAG_B_RETURN:
@@ -396,7 +396,7 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
       }
       else if isTextView() {
         textView?.insertText("\n")
-        NotificationCenter.default.post(name: NSNotification.Name.UITextViewTextDidChange, object: self.textView)
+        NotificationCenter.default.post(name: UITextField.textDidChangeNotification, object: self.textView)
       }
 
     case TAG_B_DISMISS:
